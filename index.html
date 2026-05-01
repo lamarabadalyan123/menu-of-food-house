@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #064e3b; /* Մուգ կանաչ */
+            background-color: #064e3b;
             color: white;
             margin: 0;
             padding: 0;
@@ -26,9 +26,17 @@
             width: 150px;
             height: auto;
             max-height: 150px;
-            /* Հեռացված է սպիտակ ֆոնը և շրջանակը, որ լոգոն ձուլվի կանաչին */
             object-fit: contain;
             margin-bottom: 10px;
+            /* Այս ֆիլտրը լոգոն դարձնում է ոսկեգույն */
+            filter: sepia(1) saturate(5) hue-rotate(10deg) brightness(1.1);
+        }
+        .brand-name {
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 32px;
+            color: #d4af37; /* Ոսկեգույն տեքստ */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         .container {
             width: 90%;
@@ -68,9 +76,11 @@
             text-align: center;
             color: #f1c40f;
             margin: 25px 0 15px;
-            font-size: 1.2em;
+            font-size: 1.25em;
             font-weight: bold;
             font-style: italic;
+            border: 1px dashed rgba(241, 196, 15, 0.4);
+            padding: 5px;
         }
         footer {
             text-align: center;
@@ -84,13 +94,13 @@
 <body>
 
 <div class="header">
-    <!-- Լոգոն կաշխատի, եթե անունը լինի logo.webp ձեր GitHub-ում -->
     <img src="logo.webp" alt="Food House Logo" class="logo-img">
-    <h1 style="margin:0; letter-spacing: 1px; font-size: 28px;">FOOD HOUSE</h1>
+    <h1 class="brand-name">FOOD HOUSE</h1>
 </div>
 
 <div class="container">
 
+    <!-- ԱՂՑԱՆՆԵՐ -->
     <h2 class="section-title">🥗 Աղցաններ</h2>
     <div class="item-container"><div class="item-header"><span>Կրծքամսով և եգիպտացորենով (220գ)</span> <span class="price">700֏</span></div></div>
     <div class="item-container"><div class="item-header"><span>Կրծքամսով և կորեական գազարով (220գ)</span> <span class="price">700֏</span></div></div>
@@ -112,6 +122,7 @@
     <div class="item-container"><div class="item-header"><span>Վինեգրեդ (250գ)</span> <span class="price">600֏</span></div></div>
     <div class="item-container"><div class="item-header"><span>Հրաշք (220գ)</span> <span class="price">1000֏</span></div></div>
 
+    <!-- ՏԱՔ ՈՒՏԵՍՏՆԵՐ -->
     <h2 class="section-title">🍲 Տաք ուտեստներ</h2>
     <div class="item-container"><div class="item-header"><span>Հնդկաձավար (250գ)</span> <span class="price">450֏</span></div></div>
     <div class="item-container"><div class="item-header"><span>Պյուրե (250գ)</span> <span class="price">500֏</span></div></div>
@@ -135,18 +146,51 @@
     <div class="item-container"><div class="item-header"><span>Տապակած բանջարեղեն (220գ)</span> <span class="price">700֏</span></div></div>
     <div class="item-container"><div class="item-header"><span>Բնիկ կրծքամսով (1հատ)</span> <span class="price">800֏</span></div></div>
 
+    <!-- ԱՊՈՒՐՆԵՐ -->
+    <h2 class="section-title">🥣 Ապուրներ</h2>
+    <div class="item-container"><div class="item-header"><span>Բորշ տավարի մսով / Թանով / Հավով / Սոլյանկա</span></div></div>
+
+    <!-- ՄԱՆՂԱԼ -->
     <h2 class="section-title">🔥 ՄԱՆՂԱԼ</h2>
+    
     <div class="sub-category">🌯 Շաուրմա</div>
-    <div class="item-container"><div class="item-header"><span>Խոզի (Մեծ)</span> <span class="price">1000֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Հավի (Մեծ)</span> <span class="price">800֏</span></div></div>
+    <div class="item-container">
+        <div class="item-header"><span>Խոզի (Փոքր / Մեծ / Հացով)</span></div>
+        <div class="price">800֏ / 1000֏ / 1100֏</div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Հավի (Փոքր / Մեծ / Հացով)</span></div>
+        <div class="price">700֏ / 800֏ / 1000֏</div>
+    </div>
 
     <div class="sub-category">🍢 Քաբաբ</div>
-    <div class="item-container"><div class="item-header"><span>Տավարի (Մեծ)</span> <span class="price">1000֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տավարի պանրով</span> <span class="price">1500֏</span></div></div>
+    <div class="item-container">
+        <div class="item-header"><span>Տավարի (Փոքր / Մեծ / Հացով)</span></div>
+        <div class="price">800֏ / 1000֏ / 1200֏</div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Տավարի պանրով</span> <span class="price">1500֏</span></div>
+    </div>
 
     <div class="sub-category">🥩 Խորոված</div>
-    <div class="item-container"><div class="item-header"><span>Խոզի փափուկ (1կգ)</span> <span class="price">3700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Հավի գրիլ + պլեճ</span> <span class="price">3000֏</span></div></div>
+    <div class="item-container">
+        <div class="item-header"><span>Խոզի փափուկ (1կգ)</span> <span class="price">3700֏</span></div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Խոզի մատ, չալաղաջ (1կգ)</span> <span class="price">4200֏</span></div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Հավի թևիկներ + ֆրի</span> <span class="price">1500֏</span></div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Հավի գրիլ + պլեճ</span> <span class="price">3000֏</span></div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Ձուկ (սիգ) + ֆրի</span> <span class="price">700֏</span></div>
+    </div>
+    <div class="item-container">
+        <div class="item-header"><span>Խորոված բանջարեղեն</span></div>
+    </div>
 
 </div>
 
