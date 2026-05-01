@@ -3,199 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food House Menu</title>
+    <title>Food Court Menu - Full List</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #064e3b;
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #052e16;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .header {
+        header {
             width: 100%;
             text-align: center;
             padding: 30px 0;
-            background: #064e3b;
+            background: linear-gradient(to bottom, #022c22, #052e16);
             border-bottom: 2px solid #d4af37;
         }
-        .logo-img {
-            width: 150px;
-            height: auto;
-            max-height: 150px;
-            object-fit: contain;
-            margin-bottom: 10px;
-            /* Այս ֆիլտրը լոգոն դարձնում է ոսկեգույն */
-            filter: sepia(1) saturate(5) hue-rotate(10deg) brightness(1.1);
-        }
-        .brand-name {
-            margin: 0;
-            letter-spacing: 2px;
-            font-size: 32px;
-            color: #d4af37; /* Ոսկեգույն տեքստ */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
         .container {
-            width: 90%;
-            max-width: 450px;
-            padding-bottom: 60px;
+            width: 92%;
+            max-width: 500px;
+            padding-bottom: 50px;
         }
         .section-title {
             color: #d4af37;
             text-align: center;
             font-size: 26px;
-            margin: 40px 0 20px;
             text-transform: uppercase;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 10px;
+            margin: 40px 0 20px;
             letter-spacing: 2px;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.5);
-            padding-bottom: 5px;
         }
-        .item-container {
+        .sub-cat {
+            color: #fcd34d;
+            font-size: 20px;
+            margin: 20px 0 10px;
+            border-left: 3px solid #fcd34d;
+            padding-left: 10px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.05);
             margin-bottom: 12px;
             padding: 12px;
-            background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
-            border-left: 3px solid #d4af37;
+            border-left: 4px solid #d4af37;
         }
-        .item-header {
+        .item-row {
             display: flex;
             justify-content: space-between;
-            font-weight: bold;
-            font-size: 1.1em;
-            line-height: 1.3;
+            align-items: flex-start;
         }
-        .price {
+        .item-name {
+            font-size: 16px;
+            font-weight: bold;
+            flex: 1;
+            padding-right: 10px;
+        }
+        .item-price {
             color: #d4af37;
-            white-space: nowrap;
-            margin-left: 10px;
-        }
-        .sub-category {
-            text-align: center;
-            color: #f1c40f;
-            margin: 25px 0 15px;
-            font-size: 1.25em;
             font-weight: bold;
+            white-space: nowrap;
+        }
+        .item-details {
+            font-size: 13px;
+            color: #a1a1aa;
+            margin-top: 5px;
             font-style: italic;
-            border: 1px dashed rgba(241, 196, 15, 0.4);
-            padding: 5px;
         }
         footer {
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 12px;
             text-align: center;
-            padding: 30px;
-            font-size: 0.9em;
-            opacity: 0.6;
-            width: 100%;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <img src="logo.webp" alt="Food House Logo" class="logo-img">
-    <h1 class="brand-name">FOOD HOUSE</h1>
-</div>
+<header>
+    <div style="width:80px; height:80px; border:2px solid #d4af37; border-radius:50%; margin:0 auto 10px; display:flex; align-items:center; justify-content:center; color:#d4af37; font-weight:bold;">ԼՈԳՈ</div>
+    <h1>FOOD COURT</h1>
+</header>
 
 <div class="container">
 
     <!-- ԱՂՑԱՆՆԵՐ -->
-    <h2 class="section-title">🥗 Աղցաններ</h2>
-    <div class="item-container"><div class="item-header"><span>Կրծքամսով և եգիպտացորենով (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կրծքամսով և կորեական գազարով (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Բազուկով (220գ)</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Բազուկով և ընկույզով (220գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Թաբուլե (250գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կրծքամսով և սնկով (220գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կորեական գազար (220գ)</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կորեական գազարով և բազուկով (220գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կեսար (200գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Մայրաքաղաքային (220գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Հավով և սմբուկով</span> <span class="price">---</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կաղամբով (220գ)</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Կրծքամսով և բրոկոլիով (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Վրացական (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Ամառային (250գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Վեգան (220գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Ֆունչոզա (220գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Վինեգրեդ (250գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Հրաշք (220գ)</span> <span class="price">1000֏</span></div></div>
+    <h2 class="section-title">Աղցաններ</h2>
+    
+    <div class="item">
+        <div class="item-row"><span class="item-name">1. Կրծքամսով և եգիպտացորենով (220գ)</span><span class="item-price">700դր</span></div>
+        <div class="item-details">կրծքամիս + եգիպտացորեն + թարմ վարունգ + կանաչի + մայոնեզ</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">2. Կրծքամսով և կորեական գազարով (220գ)</span><span class="item-price">700դր</span></div>
+        <div class="item-details">կրծքամիս, գազար, սխտոր, կանաչի, ընկույզ, թթու վարունգ, մայոնեզ</div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">3. Բազուկով (220գ)</span><span class="item-price">500դր</span></div>
+    </div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">4. Բազուկով և ընկույզով (220գ)</span><span class="item-price">600դր</span></div>
+        <div class="item-details">բազուկ, սամիթ, ընկույզ, ձիթայուղ, քացախ</div>
+    </div>
+
+    <div class="item"><div class="item-row"><span class="item-name">5. Թաբուլե (250գ)</span><span class="item-price">600դր</span></div></div>
+
+    <div class="item">
+        <div class="item-row"><span class="item-name">6. Կրծքամսով և սնկով (220գ)</span><span class="item-price">800դր</span></div>
+        <div class="item-details">կրծքամիս, սունկ, ընկույզ, ցեզար սոուս, կանաչի, թթու վարունգ</div>
+    </div>
+
+    <div class="item"><div class="item-row"><span class="item-name">7. Կորեական գազար (220գ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">8. Կորեական գազարով և բազուկով (220գ)</span><span class="item-price">600դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">9. Կեսար (200գ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">10. Մայրաքաղաքային (220գ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">11. Հավով և սմբուկով</span><span class="item-price">-</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">12. Կաղամբով (220գ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">13. Կրծքամսով և բրոկոլիով (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">14. Վրացական (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">15. Ամառային (250գ)</span><span class="item-price">600դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">16. Վեգան (220գ)</span><span class="item-price">600դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">17. Ֆունչոզա (220գ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">18. Վինեգրեդ (250գ)</span><span class="item-price">600դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">19. Հրաշք (220գ)</span><span class="item-price">1000դր</span></div></div>
 
     <!-- ՏԱՔ ՈՒՏԵՍՏՆԵՐ -->
-    <h2 class="section-title">🍲 Տաք ուտեստներ</h2>
-    <div class="item-container"><div class="item-header"><span>Հնդկաձավար (250գ)</span> <span class="price">450֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Պյուրե (250գ)</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Պյուրե տավարի մսով (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տապակած կարտոֆիլ (ճմուռ) (300գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Գյուղական կարտոֆիլ (250գ)</span> <span class="price">600֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լցոնած կարտոֆիլ տավարի մսով</span> <span class="price">900֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լցոնած կարտոֆիլ հավի մսով</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լցոնած կարտոֆիլ սնկով</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լցոնած սմբուկ</span> <span class="price">900֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Հավի կրծքամիս (լանգետ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լազանյա</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Չախոբիլի (230գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Լոլիկով ձվածեղ (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տապակած սպանախ (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տապակած սունկ (220գ)</span> <span class="price">800֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տեֆտելի (1հատ)</span> <span class="price">350֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Պասուց տոլմա (1հատ)</span> <span class="price">500֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Խոզի ժարկո (1 բաժին)</span> <span class="price">1200֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տավարի կոտլետ (1հատ)</span> <span class="price">450֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Տապակած բանջարեղեն (220գ)</span> <span class="price">700֏</span></div></div>
-    <div class="item-container"><div class="item-header"><span>Բնիկ կրծքամսով (1հատ)</span> <span class="price">800֏</span></div></div>
+    <h2 class="section-title">Տաք ուտեստներ</h2>
+    <div class="item"><div class="item-row"><span class="item-name">1. Հնդկաձավար (250գ)</span><span class="item-price">450դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">2. Պյուրե (250գ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">3. Ռիզոտտո</span><span class="item-price">-</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">4. Պյուրե տավարի մսով (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">5. Տապակած կարտոֆիլ (ճմուռ) (300գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">6. Գյուղական կարտոֆիլ (250գ)</span><span class="item-price">600դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">7. Լցոնած կարտոֆիլ տավարի մսով (1հատ)</span><span class="item-price">900դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">8. Լցոնած կարտոֆիլ հավի մսով (1հատ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">9. Լցոնած կարտոֆիլ սնկով (1հատ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">10. Լցոնած սմբուկ (1հատ)</span><span class="item-price">900դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">11. Հավի կրծքամիս (լանգետ) (1հատ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">12. Լազանյա (1հատ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">13. Չախոբիլի (230գ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">14. Ուզբեկական փլավ</span><span class="item-price">-</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">15. Լոլիկով ձվածեղ (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">16. Տապակած սպանախ (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">17. Տապակած սունկ (220գ)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">18. Տեֆտելի (1հատ սուսով)</span><span class="item-price">350դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">19. Պասուց տոլմա (1հատ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">20. Հավի միս և կարտոֆիլ (1 բաժին)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">21. Քարաճիկ (1 բաժին)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">22. Խոզի ժարկո (1 բաժին)</span><span class="item-price">1200դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">23. Հավի կոտլետ (կտրտած մսով) (1հատ)</span><span class="item-price">500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">24. Հավի կոտլետ (1հատ)</span><span class="item-price">400դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">25. Տավարի կոտլետ (1հատ)</span><span class="item-price">450դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">26. Տապակած բանջարեղեն (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">27. Տապակած գարոխ (220գ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">28. Նրբերշիկ կարտոֆիլով (1 բաժին)</span><span class="item-price">800դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">29. Բնիկ կրծքամսով (1հատ)</span><span class="item-price">800դր</span></div></div>
 
     <!-- ԱՊՈՒՐՆԵՐ -->
-    <h2 class="section-title">🥣 Ապուրներ</h2>
-    <div class="item-container"><div class="item-header"><span>Բորշ տավարի մսով / Թանով / Հավով / Սոլյանկա</span></div></div>
+    <h2 class="section-title">Ապուրներ</h2>
+    <div class="item"><div class="item-row"><span class="item-name">1. Բորշ տավարի մսով</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">2. Թանով ապուր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">3. Հավով ապուր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">4. Սոլյանկա</span></div></div>
 
     <!-- ՄԱՆՂԱԼ -->
-    <h2 class="section-title">🔥 ՄԱՆՂԱԼ</h2>
+    <h2 class="section-title">Մանղալ</h2>
     
-    <div class="sub-category">🌯 Շաուրմա</div>
-    <div class="item-container">
-        <div class="item-header"><span>Խոզի (Փոքր / Մեծ / Հացով)</span></div>
-        <div class="price">800֏ / 1000֏ / 1100֏</div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Հավի (Փոքր / Մեծ / Հացով)</span></div>
-        <div class="price">700֏ / 800֏ / 1000֏</div>
-    </div>
+    <h3 class="sub-cat">Շաուրմա</h3>
+    <div class="item"><div class="item-row"><span class="item-name">Խոզի (փոքր / մեծ / հացով)</span><span class="item-price">800 / 1000 / 1100դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի (փոքր / մեծ / հացով)</span><span class="item-price">700 / 800 / 1000դր</span></div></div>
 
-    <div class="sub-category">🍢 Քաբաբ</div>
-    <div class="item-container">
-        <div class="item-header"><span>Տավարի (Փոքր / Մեծ / Հացով)</span></div>
-        <div class="price">800֏ / 1000֏ / 1200֏</div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Տավարի պանրով</span> <span class="price">1500֏</span></div>
-    </div>
+    <h3 class="sub-cat">Քաբաբ</h3>
+    <div class="item"><div class="item-row"><span class="item-name">Տավարի (փոքր / մեծ / հացով)</span><span class="item-price">800 / 1000 / 1200դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Տավարի, պանրով</span><span class="item-price">1500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի (փոքր / մեծ / հացով)</span><span class="item-price">600 / 800 / 1000դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի, պանրով</span><span class="item-price">1200դր</span></div></div>
 
-    <div class="sub-category">🥩 Խորոված</div>
-    <div class="item-container">
-        <div class="item-header"><span>Խոզի փափուկ (1կգ)</span> <span class="price">3700֏</span></div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Խոզի մատ, չալաղաջ (1կգ)</span> <span class="price">4200֏</span></div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Հավի թևիկներ + ֆրի</span> <span class="price">1500֏</span></div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Հավի գրիլ + պլեճ</span> <span class="price">3000֏</span></div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Ձուկ (սիգ) + ֆրի</span> <span class="price">700֏</span></div>
-    </div>
-    <div class="item-container">
-        <div class="item-header"><span>Խորոված բանջարեղեն</span></div>
-    </div>
+    <h3 class="sub-cat">Խորոված</h3>
+    <div class="item"><div class="item-row"><span class="item-name">Խոզի փափուկ (1կգ)</span><span class="item-price">3700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Խոզի մատ, չալաղաջ (1կգ)</span><span class="item-price">4200դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի + ֆրի (1կգ)</span><span class="item-price">3000դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի գրիլ + պլեճ (1հատ)</span><span class="item-price">3000դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Ձուկ (սիգ) + ֆրի (1հատ)</span><span class="item-price">700դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի թևիկներ + ֆրի (1 բաժին)</span><span class="item-price">1500դր</span></div></div>
+    <div class="item"><div class="item-row"><span class="item-name">Հավի բդիկ + ֆրի (1 բաժին)</span><span class="item-price">1500դր</span></div></div>
 
 </div>
 
 <footer>
-    <p>Վանաձոր, Food House<br>Բարի ախորժակ!</p>
+    Բարի Ախորժակ!
 </footer>
 
 </body>
