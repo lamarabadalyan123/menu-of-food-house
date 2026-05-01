@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Court Menu - Full List</title>
+    <title>Food House Menu</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #052e16;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #052e16; /* Մուգ կանաչ */
             color: #ffffff;
             margin: 0;
             padding: 0;
@@ -18,38 +18,63 @@
         header {
             width: 100%;
             text-align: center;
-            padding: 30px 0;
+            padding: 40px 0;
             background: linear-gradient(to bottom, #022c22, #052e16);
-            border-bottom: 2px solid #d4af37;
+            border-bottom: 3px solid #d4af37; /* Ոսկեգույն գիծ */
+        }
+        .logo-placeholder {
+            width: 110px;
+            height: 110px;
+            border: 3px solid #d4af37; /* Ոսկեգույն շրջանակ */
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #064e3b;
+            overflow: hidden;
+        }
+        .logo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main-title {
+            color: #d4af37; /* Ոսկեգույն վերնագիր */
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         .container {
             width: 92%;
-            max-width: 500px;
-            padding-bottom: 50px;
+            max-width: 480px;
+            padding-bottom: 60px;
         }
         .section-title {
             color: #d4af37;
             text-align: center;
             font-size: 26px;
             text-transform: uppercase;
-            border-bottom: 1px solid #d4af37;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.4);
             padding-bottom: 10px;
-            margin: 40px 0 20px;
+            margin: 45px 0 20px;
             letter-spacing: 2px;
         }
         .sub-cat {
             color: #fcd34d;
             font-size: 20px;
-            margin: 20px 0 10px;
-            border-left: 3px solid #fcd34d;
-            padding-left: 10px;
+            margin: 25px 0 10px;
+            border-left: 4px solid #d4af37;
+            padding-left: 12px;
+            background: rgba(212, 175, 55, 0.1);
         }
         .item {
             background-color: rgba(255, 255, 255, 0.05);
             margin-bottom: 12px;
-            padding: 12px;
-            border-radius: 8px;
-            border-left: 4px solid #d4af37;
+            padding: 15px;
+            border-radius: 10px;
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
         }
         .item-row {
             display: flex;
@@ -57,7 +82,7 @@
             align-items: flex-start;
         }
         .item-name {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
             flex: 1;
             padding-right: 10px;
@@ -65,34 +90,38 @@
         .item-price {
             color: #d4af37;
             font-weight: bold;
+            font-size: 17px;
             white-space: nowrap;
         }
         .item-details {
-            font-size: 13px;
+            font-size: 14px;
             color: #a1a1aa;
-            margin-top: 5px;
+            margin-top: 6px;
+            line-height: 1.4;
             font-style: italic;
         }
         footer {
-            margin-top: 20px;
-            padding: 20px;
-            font-size: 12px;
+            padding: 40px;
             text-align: center;
-            opacity: 0.5;
+            font-size: 14px;
+            color: #d4af37;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="width:80px; height:80px; border:2px solid #d4af37; border-radius:50%; margin:0 auto 10px; display:flex; align-items:center; justify-content:center; color:#d4af37; font-weight:bold;">ԼՈԳՈ</div>
-    <h1>FOOD COURT</h1>
+    <div class="logo-placeholder">
+        <img src="logo.webp" alt="Լոգո">
+    </div>
+    <h1 class="main-title">FOOD HOUSE</h1>
 </header>
 
 <div class="container">
 
     <!-- ԱՂՑԱՆՆԵՐ -->
-    <h2 class="section-title">Աղցաններ</h2>
+    <h2 class="section-title">🥗 Աղցաններ</h2>
     
     <div class="item">
         <div class="item-row"><span class="item-name">1. Կրծքամսով և եգիպտացորենով (220գ)</span><span class="item-price">700դր</span></div>
@@ -104,9 +133,7 @@
         <div class="item-details">կրծքամիս, գազար, սխտոր, կանաչի, ընկույզ, թթու վարունգ, մայոնեզ</div>
     </div>
 
-    <div class="item">
-        <div class="item-row"><span class="item-name">3. Բազուկով (220գ)</span><span class="item-price">500դր</span></div>
-    </div>
+    <div class="item"><div class="item-row"><span class="item-name">3. Բազուկով (220գ)</span><span class="item-price">500դր</span></div></div>
 
     <div class="item">
         <div class="item-row"><span class="item-name">4. Բազուկով և ընկույզով (220գ)</span><span class="item-price">600դր</span></div>
@@ -135,7 +162,7 @@
     <div class="item"><div class="item-row"><span class="item-name">19. Հրաշք (220գ)</span><span class="item-price">1000դր</span></div></div>
 
     <!-- ՏԱՔ ՈՒՏԵՍՏՆԵՐ -->
-    <h2 class="section-title">Տաք ուտեստներ</h2>
+    <h2 class="section-title">🍲 Տաք ուտեստներ</h2>
     <div class="item"><div class="item-row"><span class="item-name">1. Հնդկաձավար (250գ)</span><span class="item-price">450դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">2. Պյուրե (250գ)</span><span class="item-price">500դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">3. Ռիզոտտո</span><span class="item-price">-</span></div></div>
@@ -167,26 +194,26 @@
     <div class="item"><div class="item-row"><span class="item-name">29. Բնիկ կրծքամսով (1հատ)</span><span class="item-price">800դր</span></div></div>
 
     <!-- ԱՊՈՒՐՆԵՐ -->
-    <h2 class="section-title">Ապուրներ</h2>
+    <h2 class="section-title">🥣 Ապուրներ</h2>
     <div class="item"><div class="item-row"><span class="item-name">1. Բորշ տավարի մսով</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">2. Թանով ապուր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">3. Հավով ապուր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">4. Սոլյանկա</span></div></div>
 
     <!-- ՄԱՆՂԱԼ -->
-    <h2 class="section-title">Մանղալ</h2>
+    <h2 class="section-title">🔥 ՄԱՆՂԱԼ</h2>
     
-    <h3 class="sub-cat">Շաուրմա</h3>
+    <h3 class="sub-cat">🌯 Շաուրմա</h3>
     <div class="item"><div class="item-row"><span class="item-name">Խոզի (փոքր / մեծ / հացով)</span><span class="item-price">800 / 1000 / 1100դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Հավի (փոքր / մեծ / հացով)</span><span class="item-price">700 / 800 / 1000դր</span></div></div>
 
-    <h3 class="sub-cat">Քաբաբ</h3>
+    <h3 class="sub-cat">🍢 Քաբաբ</h3>
     <div class="item"><div class="item-row"><span class="item-name">Տավարի (փոքր / մեծ / հացով)</span><span class="item-price">800 / 1000 / 1200դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Տավարի, պանրով</span><span class="item-price">1500դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Հավի (փոքր / մեծ / հացով)</span><span class="item-price">600 / 800 / 1000դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Հավի, պանրով</span><span class="item-price">1200դր</span></div></div>
 
-    <h3 class="sub-cat">Խորոված</h3>
+    <h3 class="sub-cat">🥩 Խորոված</h3>
     <div class="item"><div class="item-row"><span class="item-name">Խոզի փափուկ (1կգ)</span><span class="item-price">3700դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Խոզի մատ, չալաղաջ (1կգ)</span><span class="item-price">4200դր</span></div></div>
     <div class="item"><div class="item-row"><span class="item-name">Հավի + ֆրի (1կգ)</span><span class="item-price">3000դր</span></div></div>
@@ -198,7 +225,8 @@
 </div>
 
 <footer>
-    Բարի Ախորժակ!
+    <p>Բարի Ախորժակ!</p>
+    <p>Food House - Վանաձոր</p>
 </footer>
 
 </body>
